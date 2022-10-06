@@ -10,17 +10,6 @@ namespace MASYMN
 {
     internal class Program
     {
-        public int YMAS(int size, int[,] mas1, int[,] mas2, int i, int j)
-        {
-            int chs = 0;
-            for (int k = 0; k < size; k++)
-            {
-                chs += mas1[i, k] * mas2[k, j];
-            }
-            return chs;
-        }
-        
-
         static void Main(string[] args)
         {
             var rand = new Random();
@@ -50,21 +39,25 @@ namespace MASYMN
 
 
             int[,] ish = new int[size1_mas1,size1_mas2];
-            for (int i = 0; i < ish.GetLength(0); i++)
+            for (int i = 0; i < mas1.GetLength(0); i++)
             {
-                for (int j = 0; j < ish.GetLength(1); j++)
+                for (int j = 0; j < mas2.GetLength(1); j++)
                 {
-                    Thread t1 = new Thread(() =>
+                    int _i = i;
+                    int _j = j;
+                    Task task = new Task(() =>
                     {
-                        for (int k = 0; k < size1_mas1; k++)
+                        for (int k = 0; k < mas2.GetLength(0); k++)
                         {
-                            ish[i, j] += mas1[i, k] * mas2[k, j];
+                           
+                            ish[_i, _j] += mas1[_i, k] * mas2[k, _j];
                         }
                     });
-                    t1.Start();
-                   
+
+                    task.Start();
                 }
             }
+            Thread.Sleep(500);                     
             for (int i = 0; i < ish.GetLength(0); i++)
             {
                 for (int j = 0; j < ish.GetLength(1); j++)
