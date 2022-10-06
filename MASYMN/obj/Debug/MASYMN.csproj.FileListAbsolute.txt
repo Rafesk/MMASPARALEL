@@ -1,0 +1,8 @@
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\bin\Debug\MASYMN.exe.config
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\bin\Debug\MASYMN.exe
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\bin\Debug\MASYMN.pdb
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\obj\Debug\MASYMN.csproj.AssemblyReference.cache
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\obj\Debug\MASYMN.csproj.SuggestedBindingRedirects.cache
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\obj\Debug\MASYMN.csproj.CoreCompileInputs.cache
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\obj\Debug\MASYMN.exe
+D:\work and study\универ\ПРВ\MASYMN\MASYMN\obj\Debug\MASYMN.pdb
